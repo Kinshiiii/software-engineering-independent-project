@@ -15,6 +15,11 @@ void wykonaj_operacje() {
     cout << "Podaj liczbę całkowitą dodatnią: ";
     cin >> liczba;
 
+    if (liczba <= 0) {
+        cout << "Podano liczbę niedodatnią. Program zakończy działanie." << endl;
+        return;
+    }
+    
     cout << "Wpisałeś liczbę: " << liczba << (czy_pierwsza(liczba) ? " (liczba pierwsza)" : " (liczba złożona)") << endl;
 }
 
